@@ -2,7 +2,7 @@
 
 ![Plugin Version](https://img.shields.io/badge/version-1.0.0-brightgreen.svg)
 ![WordPress Version](https://img.shields.io/badge/WordPress-5.5%2B-blue.svg)
-![License](https://img.shields.io/badge/license-GNU GPL-2.0-red.svg)
+![License](https://img.shields.io/badge/license-GNU%20GPL%202.0-red.svg)
 
 ## Project Goal
 
