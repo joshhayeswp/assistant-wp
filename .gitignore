@@ -1,29 +1,27 @@
-# Wordpress - ignore core, configuration, examples, uploads and logs.
-# https://github.com/github/gitignore/blob/main/WordPress.gitignore
+# WordPress - Secure .gitignore
+# This .gitignore is tailored for a secure WordPress plugin repository.
+# It excludes common files and directories that shouldn't be part of the repository.
+# Feel free to modify this list as needed.
 
-# Core
-#
-# Note: if you want to stage/commit WP core files
-# you can delete this whole section/until Configuration.
+# Core WordPress files and directories
 /wp-admin/
-/wp-content/index.php
 /wp-content/languages
-/wp-content/plugins/index.php
-/wp-content/themes/index.php
+/wp-content/plugins/
+/wp-content/themes/
 /wp-includes/
 /index.php
 /license.txt
 /readme.html
-/wp-*.php
 /xmlrpc.php
 
-# Configuration
+# Configuration files
 wp-config.php
+wp-config-sample.php
 
 # Example themes
 /wp-content/themes/twenty*/
 
-# Example plugin
+# Example plugins
 /wp-content/plugins/hello.php
 
 # Uploads
@@ -32,17 +30,69 @@ wp-config.php
 # Log files
 *.log
 
-# htaccess
+# .htaccess files
 /.htaccess
 
-# All plugins
-#
-# Note: If you wish to whitelist plugins,
-# uncomment the next line
-#/wp-content/plugins
+# Cache and temporary files
+*.cache
+*.tmp
+*.swp
 
-# All themes
-#
-# Note: If you wish to whitelist themes,
-# uncomment the next line
-#/wp-content/themes
+# Security plugins
+/wordfence/
+/sucuri/
+/bulletproof-security/
+/ithemes-security/
+/all-in-one-wp-security-and-firewall/
+/wps-hide-login/
+/wps-lockdown/
+/shield-security/
+
+# Common backup plugins
+/updraft/
+/backwpup/
+/duplicator/
+/backupbuddy/
+/wp-dbmanager/
+
+# Common development and build tools
+/gruntfile.js
+/gulpfile.js
+/package.json
+/package-lock.json
+/composer.json
+/composer.lock
+
+# Node modules and dependencies
+/node_modules/
+
+# PHPStorm project files
+/.idea/
+
+# Docker configurations
+/docker-compose.yml
+/docker/
+/.dockerignore
+
+# Logs and cache directories
+/logs/
+/cache/
+
+# OS and editor-specific files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Custom configuration and environment files
+.env
+.env.example
+.env.local
+.env.*.php
+
+# Various build and temporary files
+/build/
+/dist/
+/node_modules/
+/vendor/
+/tmp/
